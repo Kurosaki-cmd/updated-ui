@@ -1,0 +1,341 @@
+body {
+    text-align: center;
+    background-color: #faf9f8;
+    overflow-x: hidden;
+}
+
+.big-navbar{
+    display: none;
+}
+
+.container{
+    padding: 0rem 6rem;
+}
+
+::-webkit-scrollbar{
+    width: 15px; 
+  }
+  ::-webkit-scrollbar-track{
+    background: transparent ; 
+  }
+  
+  ::-webkit-scrollbar-thumb{
+    
+    background: red;
+    
+    border-bottom: 5px;
+  }
+
+.navbar{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    color: #686868;
+}
+
+p,
+li {
+    font-weight: 400;
+}
+
+.rule {
+    width: 100%;
+    margin-top: 0px;
+}
+
+li {
+    cursor: pointer;
+    list-style: none;
+}
+
+.navbar-ul{
+    flex-wrap: wrap;
+}
+
+.center>img {
+    width: 80px;
+}
+
+
+.search-box {
+    position: relative;
+    transition: width 0.3s ease;
+    margin-left: auto; /* Align to the left side */
+}
+
+.searchRow {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.input {
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: 2px solid #252525;
+    border-radius: 50%;
+    box-sizing: border-box;
+    font-family: Comic Sans MS;
+    font-size: 16px;
+    color: #6c6c6c;
+    outline: none;
+    transition: all ease-out .5s;
+}
+
+.search-box:hover input,
+.input.focused {
+    width: 200px;
+    background: #dadadaa7;
+    color: rgb(53, 52, 52);
+    border-radius: 20px;
+}
+
+.icon {
+    position: absolute;
+    top: 54%;
+    right: -4px;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    color: #000000;
+    transition: .2s;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+}
+
+
+.search-box:hover i,
+.input.focused + .icon {
+    opacity: 1;
+    z-index: 100;
+}
+
+/* Hero ki CSS */
+
+
+.heroRow {
+    height: 80vh !important;
+}
+
+.heroRow>div {
+    height: 100%;
+    width: 100%;
+}
+
+
+.hero-text {
+    background-image: url('https://static.zara.net/assets/public/dfbd/7c62/200843ef8fac/22994c2447c5/image-landscape-fill-7a05c0de-c1db-4299-b9d5-07a03d2f893f-default_0.jpg?ts=1718809904873&w=2140');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: xx-large !important;
+    padding: 2rem;
+    /* color: #6c6c75; */
+    color: black !important;
+}
+
+.hero-text>h1,
+.hero-text>h2 {
+    font-size: 5vw !important;
+    padding: 10px;
+}
+
+.logo-container>img {
+    width: 50px;
+}
+
+.heroRow>div>div {
+    height: inherit;
+}
+
+.heroImage>img {
+    height: inherit;
+    width: inherit;
+    object-fit: fill;
+}
+
+.hero-text {
+    position: relative;
+    padding: 2rem;
+    color: black;
+}
+
+.hero-text::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    /* Adjust the height to control the size of the tint */
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+    /* Gradient from black to transparent */
+    pointer-events: none;
+    /* Ensure the pseudo-element doesn't interfere with mouse events */
+}
+
+/* feature ki css */
+
+.feature-section {
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    /* height: 92vh; */
+}
+
+.feature-card-column{
+    height: fit-content;
+}
+
+
+/* Style for the feature-row */
+.feature-row {
+    display: inline-block;
+    white-space: nowrap;
+    background-color: black;
+    color: white;
+    margin: 0px !important;
+    padding: 0px;
+}
+
+.feature-heading {
+    margin-bottom: 0px;
+    text-transform: uppercase;
+    font-size: 5vw;
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+/* featuer of heading of featuer card  */
+/* Base styles for the feature card */
+
+.feature-card-row{
+    height: -webkit-fill-available;
+    margin: auto;
+    margin-top: 6vmax;
+    justify-content: center;
+    padding: auto 10px !important;
+}
+
+.box {
+    background-color: #fff; 
+    border: 1px solid #e0e0e0; 
+    padding: 20px;
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease; 
+}
+
+.box:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.feature-card-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-card-image img {
+    max-width: 100%;
+    height: 21vw !important;
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 4px; /* Rounded corners for the image */
+    object-fit: fill;
+}
+
+.feature-card-heading{
+    padding-top: 10px 0px 0px 0px ;
+}
+
+.feature-card-heading h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333; /* Heading color */
+}
+
+.feature-card-content p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #666; /* Content color */
+}
+
+.feature-card-heading > h1{
+    font-size: 1.5rem;
+}
+
+/* feamale product ki css  */
+
+.female-heading{
+    margin-bottom: 0px;
+    text-transform: uppercase;
+    font-size: 5vw;
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.male-heading{
+    margin-bottom: 0px;
+    text-transform: uppercase;
+    font-size: 5vw;
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+/* footer ki css   */
+
+.footer-newsletter{
+    display: block;
+}
+/* .container3 {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    height: 80vh; 
+    margin-bottom: 18rem;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 60%;
+    height: 100%;
+    gap: 10px; 
+    padding-left: 60px;
+}
+
+.image-grid div {
+    width: 100%;
+    height: 78%;
+    position: relative;
+}
+
+.image-grid div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} */
+
+.single-image {
+    width: 40%;
+    height: 120%;
+}
+
+.single-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.model h1{
+    white-space: nowrap;
+    font-weight: 900;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

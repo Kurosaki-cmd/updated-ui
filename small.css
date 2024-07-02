@@ -1,0 +1,68 @@
+@media only screen and (max-width: 991px) {
+
+    /* navbar Search icon  */
+    .phone-navbar {
+        display: none !important;
+        visibility: hidden !important;
+    }
+
+    .big-navbar {
+        display: block;
+    }
+
+    /* Styles for phones */
+    .hero-text {
+        background-position: right;
+        color: white !important;
+    }
+
+    .hero-text>h1 {
+        font-weight: 700 !important;
+        font-size: 9vw !important;
+    }
+
+    .feature-card-heading>h1 {
+        font-size: 1rem !important;
+    }
+
+    .female-heading {
+        font-size: 8vw;
+    }
+
+    .male-heading {
+        font-size: 9vw;
+    }
+
+    .feature-card {
+        margin: 0rem;
+    }
+
+    .footer-row-1 {
+        display: flex !important;
+        justify-content: space-between !important;
+    }
+
+    .footer-newsletter {
+        display: none;
+    }
+
+    .footer-ul{
+        font-size: 0.7rem !important;
+    }
+}
+
+@media only screen and (max-width: 1483px) {
+
+    /* navbar search icon ki width  */
+
+    .container {
+        padding: 0rem 1rem;
+    }
+
+    .search-box:hover input,
+    .input.focused {
+        width: 200px;
+        background: #ffffff;
+        border-radius: 20px;
+    }
+}
